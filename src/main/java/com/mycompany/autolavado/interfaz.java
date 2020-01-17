@@ -42,14 +42,4 @@ public class interfaz {
                 System.out.println("Favor de escoger alguna de las opciones que se le ofrece");
         }
     }
-    /*
-    Citas
-     Crear
-     Consultar
-     Eliminar
-    Pagos
-    Reclamaciones
-    turnos
-    trabajo especial
-     */
 }
