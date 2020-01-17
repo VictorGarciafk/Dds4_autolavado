@@ -4,22 +4,28 @@ package com.mycompany.autolavado;
  *
  * @author Victor Hugo Garcia Mendez
  */
-public abstract class servicios extends abstrac {
+public class servicios extends abstrac {
 
-    public static void SeleccionarLavado() {
-        System.out.println("Que tipo de lavado desea?");
-        System.out.println("4");
+    String s = "";
+    double precio = 0;
+
+    public static void estandar() {
+        s = "Estandar";
+        precio = 1;
     }
 
-    public void estandar() {
-
+    public static void premium() {
+        String s = "Premium";
+        double precio = 1.2;
     }
 
-    public void premium() {
-
+    public static void platinum() {
+        String s = "Platinum";
+        double precio = 1.5;
     }
 
-    public void platinum() {
-
+    @Override
+    public void proceso() {
+        System.out.println("");
     }
 }
