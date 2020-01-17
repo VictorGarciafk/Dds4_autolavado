@@ -9,7 +9,8 @@ import java.util.Scanner;
 public class interfaz {
 
     public static void main(String[] args) {
-        String s = "";
+        servicios s = new servicios();
+        
         double precio = 0;
         Scanner sc = new Scanner(System.in);
         int opcion = 0;
@@ -29,13 +30,13 @@ public class interfaz {
 
         switch (opcion) {
             case 1:
-                servicios.estandar();
+                s.estandar();
                 break;
             case 2:
-                servicios.premium();
+                s.premium();
                 break;
             case 3:
-                servicios.platinum();
+                s.platinum();
                 break;
             default:
                 System.out.println("Favor de escoger alguna de las opciones que se le ofrece");
